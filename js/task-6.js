@@ -18,10 +18,9 @@ const products = [
    let totalPrice = 0;
    for (const item of products) {
        if (productName === item.name){
-       console.table(item);
        totalPrice += item.price * item.quantity;
    } 
-}
+} 
    return totalPrice;
   };
   
