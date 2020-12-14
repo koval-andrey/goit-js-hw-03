@@ -9,7 +9,6 @@
 let totalSalary  = 0;
 const countTotalSalary = function(employees) {
  const salaryValues = Object.values(employees);
-  console.log(salaryValues);
  for (const salary of salaryValues) {
     totalSalary += salary;
  }
