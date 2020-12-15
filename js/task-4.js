@@ -4,15 +4,13 @@
  Каждое поле объекта, передаваемого в функцию, имеет вид "имя":"зарплата".
 */
 
-
-
-let totalSalary  = 0;
-const countTotalSalary = function(employees) {
- const salaryValues = Object.values(employees);
- for (const salary of salaryValues) {
+const countTotalSalary = function (employees) {
+  let totalSalary = 0;
+  const salaryValues = Object.values(employees);
+  for (const salary of salaryValues) {
     totalSalary += salary;
- }
- return totalSalary;
+  }
+  return totalSalary;
 };
 
 /*
@@ -25,7 +23,7 @@ console.log(
     mango: 100,
     poly: 150,
     alfred: 80,
-  }),
+  })
 ); // 330
 
 console.log(
@@ -33,5 +31,5 @@ console.log(
     kiwi: 200,
     lux: 50,
     chelsy: 150,
-  }),
+  })
 ); // 400

@@ -7,7 +7,7 @@
 const findBestEmployee = function (employees) {
   const bestValues = Object.values(employees);
   const bestKeys = Object.keys(employees);
-
+  const maxNumberOfTasks = Math.max(...bestValues);
   for (const [key, value] of Object.entries(employees)) {
     const maxNumberOfTasks = Math.max(...bestValues);
     if (value === maxNumberOfTasks) {
